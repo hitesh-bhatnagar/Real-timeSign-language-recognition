@@ -4,15 +4,15 @@ This project is a **Real-Time Sign Language Recognition System** that uses deep 
 
 
 ### Table of Contents
-1. Project Overview
-2. Features
-3. Tech Stack
-4. Directory Structure
-5. Installation and Usage
-6. Demo
-7. Results
-8. Future Enhancements
-9. Contributors
+
+1. [Project Overview](#project-overview)
+2. [Features](#features)
+3. [Tech Stack](#tech-stack)
+4. [Directory Structure](#directory-structure)
+5. [Installation and Usage](#installation-and-usage)
+6. [Step-by-step Setup](#step-by-step-setup)
+7. [Future Enhancements](#future-enhancements)
+8. [Author](#author)
 
 ### Project Overview
 
@@ -94,9 +94,9 @@ python Real-time-sign-recognition_asl_model.py
 3. **Mobile Application:** Deploy the model on mobile devices for accessibility
 4. **Extended Dataset:** Enhance accuracy with larger and more diverse dataset
 
-### Author
+## Author
 
-## Hitesh Bhatnagar
+### Hitesh Bhatnagar
 
 * [Github](https://github.com/hitesh-bhatnagar) 
 * [LinkedIn](www.linkedin.com/in/hitesh-bhatnagar-5a3b391ba)
