@@ -1,96 +1,118 @@
-# Real-time-Sign-language-recognition
 
-This project is a **Real-Time Sign Language Recognition System** that uses deep learning techniques to classify American Sign Language **(ASL)** gestures. It leverages **TensorFlow**, **MobileNetV2** (a pre-trained model), and **Streamlit** to provide real-time predictions through a webcam or image uploads.
+---
 
-### Table of Contents
+# Real-Time Sign Language Recognition
 
-1. [Project Overview](#project-overview)
-2. [Features](#features)
-3. [Tech Stack](#tech-stack)
-4. [Directory Structure](#directory-structure)
-5. [Installation and Usage](#installation-and-usage)
-6. [Step-by-step Setup](#step-by-step-setup)
-7. [Future Enhancements](#future-enhancements)
-8. [Author](#author)
+This project is a **Real-Time Sign Language Recognition System** that utilizes deep learning to classify American Sign Language (**ASL**) gestures. It leverages **TensorFlow**, **MobileNetV2** (a pre-trained model), and **Streamlit** to provide real-time predictions via webcam or image uploads.
 
-### Project Overview
+---
 
-This project aims to break communication barriers for the deaf and hard of hearing community by developing a system that can:
-* Recognize static ASL gestures (A-Z, space, nothing, and delete).
-* Perform **real-time predictions** through a webcam.
-* Classify uploaded images of gestures.
+## Table of Contents
 
-#### Dataset
-The model was trained using a [dataset](https://www.kaggle.com/datasets/grassknoted/asl-alphabet) containing images for ASL gestures.
+1. [Project Overview](#project-overview)  
+2. [Features](#features)  
+3. [Tech Stack](#tech-stack)  
+4. [Directory Structure](#directory-structure)  
+5. [Installation and Usage](#installation-and-usage)  
+6. [Step-by-Step Setup](#step-by-step-setup)  
+7. [Future Enhancements](#future-enhancements)  
+8. [Author](#author)  
 
-### Features
-1. **Real-Time Gesture Recognition:** Uses the webcam to predict ASL gestures in real time.
-2. **Image Upload Prediction:** Upload images of hand gestures to get predictions instantly.
-3. **Accurate Results:** Leveraged MobileNetV2 to enhance accuracy.
-4. **Easy Deployment:** Web application using **Streamlit** for user-friendly interaction.
+---
 
-### Tech Stack
+## Project Overview
 
-This project utilizes the following technologies:
-* **Python:** Programming language.
-* **TensorFlow/Keras:** Framework for deep learning model development.
-* **MobileNetV2:** Pre-trained model for transfer learning.
-* **OpenCV:** Real-time image processing.
-* **Streamlit:** For building an interactive web application.
-* **Google Colab:** Model training and testing environment with GPU support.
+This project aims to break communication barriers for the deaf and hard-of-hearing community by developing a system that can:  
+* Recognize static ASL gestures (A-Z, space, nothing, and delete).  
+* Perform **real-time predictions** through a webcam.  
+* Classify uploaded images of gestures.  
 
-### Directory Structure
+### Dataset
+The model was trained using a publicly available [dataset](https://www.kaggle.com/datasets/grassknoted/asl-alphabet) containing labeled ASL gesture images.
 
-📦 Real-Time-Sign-Language-Recognition
+---
+
+## Features
+
+1. **Real-Time Gesture Recognition:** Predict ASL gestures using the webcam in real time.  
+2. **Image Upload Prediction:** Instantly classify hand gestures from uploaded images.  
+3. **High Accuracy:** Utilizes the MobileNetV2 architecture for precise predictions.  
+4. **User-Friendly Interface:** A simple and interactive web app powered by **Streamlit**.  
+
+---
+
+## Tech Stack
+
+This project is built with the following technologies:  
+* **Python:** The primary programming language.  
+* **TensorFlow/Keras:** Framework for developing and training deep learning models.  
+* **MobileNetV2:** Pre-trained model utilized for transfer learning.  
+* **OpenCV:** For real-time image capture and processing.  
+* **Streamlit:** Enables an interactive web application for predictions.  
+* **Google Colab:** Model training and testing environment with GPU support.  
+
+---
+
+## Directory Structure
+
+📦 Real-Time-Sign-Language-Recognition  
 ```
 │
 ├── asl_model.h5                          # Trained model file
-├── Streamlit_app.py                      # Streamlit app for image uploads and predictions
-├── Real-time-sign-recognition_asl_model.py   # Real-time prediction using webcam
-├── Real_Time_Sign_language_Recognition.ipynb # Colab notebook for model training
-├── MobileNetV2_real_time_sign_recognition.ipynb # Pre-trained MobileNetV2 model implementation
+├── Streamlit_app.py                      # Web app for image uploads and predictions
+├── Real-time-sign-recognition_asl_model.py   # Script for real-time webcam gesture recognition
+├── Real_Time_Sign_Language_Recognition.ipynb # Colab notebook for model training
+├── MobileNetV2_real_time_sign_recognition.ipynb # Implementation of MobileNetV2 for sign recognition
 └── README.md                             # Project documentation
 ```
 
-### Installation and Usage
+---
 
-#### Pre-requisites
-1. Python 3.x
-2. TensorFlow
-3. OpenCV
-4. Streamlit
+## Installation and Usage
 
-#### Step-by-step Setup
+### Prerequisites  
+1. Python 3.x  
+2. TensorFlow  
+3. OpenCV  
+4. Streamlit  
 
-1. Clone the repository:
+### Step-by-Step Setup  
+
+1. Clone the repository:  
    ```bash
    git clone https://github.com/YourGitHubUsername/Real-Time-Sign-Language-Recognition.git
    cd Real-Time-Sign-Language-Recognition
-   ```
-2. Install dependencies:
+   ```  
+2. Install dependencies:  
    ```bash
    pip install tensorflow opencv-python-headless streamlit numpy matplotlib pillow
-   ```
-3. Run the Streamlit app (Image Upload Prediction):
+   ```  
+3. Start the Streamlit app (for image uploads):  
    ```bash
    streamlit run Streamlit_app.py
-   ```
-4. Run real-time webcam gesture recognition:
+   ```  
+4. Launch real-time gesture recognition using webcam:  
    ```bash
    python Real-time-sign-recognition_asl_model.py
-   ```
+   ```  
 
-### Future Enhancements
+---
 
-1. **Dynamic Gesture Recognition:** Recognize hand movements to predict words or sentences.
-2. **Speech Recognition:** Convert recognized gestures into spoken words using text-to-speech.
-3. **Mobile Application:** Deploy the model on mobile devices for accessibility.
-4. **Extended Dataset:** Enhance accuracy with a larger and more diverse dataset.
+## Future Enhancements  
 
-## Author
+1. **Dynamic Gesture Recognition:** Recognize sequences of gestures to predict full words or sentences.  
+2. **Speech Integration:** Translate gestures into spoken words using text-to-speech tools.  
+3. **Mobile Application:** Deploy the system as a mobile app for wider accessibility.  
+4. **Enhanced Dataset:** Improve accuracy by training on larger and more diverse datasets.  
 
-### Hitesh Bhatnagar
+---
 
-* [GitHub](https://github.com/hitesh-bhatnagar)
-* [LinkedIn](https://www.linkedin.com/in/hitesh-bhatnagar-5a3b391ba)
+## Author  
 
+### Hitesh Bhatnagar  
+
+Connect with me:  
+* [GitHub](https://github.com/hitesh-bhatnagar)  
+* [LinkedIn](https://www.linkedin.com/in/hitesh-bhatnagar-5a3b391ba)  
+
+---
