@@ -46,14 +46,7 @@ The python utilizes the following technologies
 
 ### Directory Structure
 
-📦 Real-Time-Sign-Language-Recognition
-│
-├── asl_model.h5                          # Trained model file
-├── Streamlit_app.py                      # Streamlit app for image uploads and predictions
-├── Real-time-sign-recognition_asl_model.py   # Real-time prediction using webcam
-├── Real_Time_Sign_language_Recognition.ipynb # Colab notebook for model training
-├── MobileNetV2_real_time_sign_recognition.ipynb # Pre-trained MobileNetV2 model implementation
-└── README.md                             # Project documentation
+📦 Real-Time-Sign-Language-Recognition ├── asl_model.h5 # Trained model file ├── Streamlit_app.py # Streamlit app for image uploads and predictions ├── Real-time-sign-recognition_asl_model.py # Real-time prediction using webcam ├── Real_Time_Sign_language_Recognition.ipynb # Colab notebook for model training ├── MobileNetV2_real_time_sign_recognition.ipynb # Pre-trained MobileNetV2 model implementation └── README.md # Project documentation
 
 ### Installation and Usage
 
